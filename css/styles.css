@@ -135,6 +135,7 @@ aside {
     right: 0;
     width: 320px;
     right: -320px;
+    transition: right .5s ease;
     background-color: white;
     padding: 80px 40px;
     z-index: 4;
@@ -160,6 +161,11 @@ aside button.close {
     padding: 10px;
     font-family: sans-serif;
     font-weight: 100;
+    cursor: pointer;
+}
+
+aside.active {
+    right: 0;
 }
 
 .backdrop {
@@ -168,4 +174,8 @@ aside button.close {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(5px);
+}
+
+.backdrop.active {
+    display: block;
 }
