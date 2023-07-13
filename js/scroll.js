@@ -21,6 +21,7 @@ document.addEventListener('scroll', () => {
     sections.forEach((section,index) => {
         if(window.pageYOffset === section.offsetTop) {
             document.lastCentered = index;
+            section.className = 'active'
             if(document.onWayTo === index) {
                 document.onWayTo = null;
             }
