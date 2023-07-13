@@ -37,6 +37,10 @@ a.logo {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header a {
     color: inherit;
     
